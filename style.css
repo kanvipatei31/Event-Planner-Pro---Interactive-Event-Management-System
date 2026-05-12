@@ -1,0 +1,1422 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo {  
+    font-size: 25px;
+    text-align: center;
+    color: rgb(192, 16, 16);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fc6f89,
+                     0 0 20px #fc6f89,
+                     0 0 30px #fc6f89;
+    }
+    to {
+        text-shadow: 0 0 20px #f4fdfe,
+                     0 0 30px #f4fdfe,
+                     0 0 40px #f4fdfe;
+    }
+}
+nav a {
+    color: rgb(92, 66, 66);
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: Georgia;
+
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s;
+    height: 100vh;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(254, 212, 212, 0.825);
+}
+
+.hero-text {
+    background: rgba(79, 32, 32, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: rgba(237, 204, 204, 0.825);
+    border: none;
+    cursor: pointer;
+}
+
+/* Services Section */
+.services {
+    padding: 50px;
+    text-align: center;
+    background: #e4cdcd;
+}
+
+.service-container {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: brown;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    box-shadow: 0 5px 15px gray;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: rgb(85, 62, 62);
+    color: rgb(251, 222, 222);
+    text-align: center;
+    padding: px;
+}
+
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.booking-form button {
+    padding: 10px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+}
+
+.about-section {
+    padding: 50px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    margin-top: 15px;
+}
+
+/* About Section Layout */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* About Image */
+.about-image img {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px gray;
+    animation: fadeInLeft 1.5s ease;
+}
+
+/* About Text */
+.about-text {
+    max-width: 500px;
+    animation: fadeInRight 1.5s ease;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Past Events Section */
+.past-events {
+    padding: 50px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.event-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px gray;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 50px;
+    text-align: center;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background: #fff;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px gray;
+}
+
+/* Contact Section */
+.contact-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 40px;
+}
+
+/* Title Animation */
+.contact-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+    animation: fadeDown 1s ease-in-out;
+}
+
+/* Container */
+.contact-container {
+    display: flex;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    animation: fadeUp 1s ease-in-out;
+}
+
+/* Contact Info */
+.contact-info {
+    max-width: 300px;
+}
+
+/* Form */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contact-form button {
+    background: white;
+    color: #ff758c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: black;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+.map-section {
+    margin-top: 40px;
+    width: 80%;
+    text-align: center;
+}
+
+.map-section h2 {
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Wedding Section */
+.wedding-section {
+    padding: 60px 10%;
+    background: #f8f8f8;
+}
+
+/* Container Layout */
+.wedding-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.wedding-image img {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.wedding-image img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .wedding-container,
+    .reverse {
+        flex-direction: column;
+    }
+}
+
+/* HERO SECTION */
+.corporate-hero {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.corporate-hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    animation: fadeDown 1s ease-in-out;
+}
+
+.corporate-hero p {
+    font-size: 18px;
+    animation: fadeUp 1.2s ease-in-out;
+}
+
+/* MAIN SECTION */
+.corporate-section {
+    background: #f4f6f9;
+    padding: 60px 10%;
+}
+
+/* CORPORATE BOX */
+.corporate-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.4s;
+    animation: fadeUp 1s ease-in-out;
+}
+
+.corporate-box:hover {
+    transform: translateY(-10px);
+}
+
+/* IMAGE */
+.corporate-box img {
+    width: 45%;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.corporate-content {
+    padding: 30px;
+    width: 55%;
+}
+
+.corporate-content h2 {
+    margin-bottom: 15px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .corporate-box {
+        flex-direction: column;
+    }
+
+    .corporate-box img {
+        width: 100%;
+    }
+
+    .corporate-content {
+        width: 100%;
+    }
+}
+
+/* HERO */
+.birthday-hero {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.birthday-hero h1 {
+    font-size: 40px;
+    animation: fadeDown 1s ease-in-out;
+}
+
+.birthday-hero p {
+    font-size: 18px;
+    animation: fadeUp 1.2s ease-in-out;
+}
+
+/* SECTION */
+.birthday-section {
+    padding: 60px 10%;
+    background: #fff5f8;
+}
+
+/* BOX */
+.birthday-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* TEXT */
+.birthday-text {
+    flex: 1;
+    animation: slideLeft 1s ease-in-out;
+}
+
+.birthday-text h2 {
+    margin-bottom: 15px;
+}
+
+/* IMAGE */
+.birthday-image {
+    flex: 1;
+    animation: slideRight 1s ease-in-out;
+}
+
+.birthday-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.birthday-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes slideLeft {
+    from { opacity: 0; transform: translateX(-60px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+    from { opacity: 0; transform: translateX(60px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .birthday-box {
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+}
+
+/* Concert Page Styling */
+
+.concert-section {
+    padding: 60px 10%;
+}
+
+.concert-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    gap: 40px;
+    animation: fadeIn 1.5s ease;
+}
+
+.concert-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.concert-text {
+    flex: 1;
+}
+
+.concert-text h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #ff4d6d;
+}
+
+.concert-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.concert-img {
+    flex: 1;
+}
+
+.concert-img img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+.concert-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body{
+font-family:'Poppins', sans-serif;
+margin:0;
+padding:0;
+background:linear-gradient(135deg,#fff5f5,#ffe6e6);
+}
+
+
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:20px;
+}
+
+h1{
+font-size:45px;
+color:#b30000;
+letter-spacing:2px;
+animation:slideDown 1s ease;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+text-decoration:none;
+margin:0 15px;
+font-size:18px;
+color:#b30000;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:black;
+border-bottom:2px solid red;
+}
+
+
+
+/* SECTION DESIGN */
+
+.wedding-section{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+
+width:85%;
+margin:auto;
+margin-top:50px;
+
+background:white;
+padding:30px;
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+animation:fadeUp 1s ease;
+}
+
+
+
+/* TEXT */
+
+.text{
+width:55%;
+}
+
+.text h2{
+color:#cc0000;
+font-size:30px;
+margin-bottom:10px;
+}
+
+.text p{
+font-size:16px;
+line-height:1.6;
+}
+
+.text ul{
+margin-top:10px;
+}
+
+
+
+/* IMAGE */
+
+.image{
+width:45%;
+}
+
+.image img{
+width:100%;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+
+
+/* IMAGE HOVER */
+
+.image img:hover{
+transform:scale(1.07);
+}
+
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:5px;
+margin-top:40px;
+background:#b30000;
+color:white;
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes slideDown{
+
+from{
+opacity:0;
+transform:translateY(-40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* CORPORATE PAGE THEME */
+
+.page-header{
+text-align:center;
+padding:30px;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb);
+color:white;
+}
+
+.page-header h1{
+font-size:45px;
+letter-spacing:2px;
+animation:fadeDown 1s ease;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+text-decoration:none;
+margin:0 15px;
+color:rgb(232, 107, 107);
+font-weight:600;
+font-size:18px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#660033;
+}
+
+
+
+/* CORPORATE SECTION */
+
+.corporate-section{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+width:85%;
+margin:auto;
+margin-top:50px;
+
+background:white;
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+gap:40px;
+
+animation:fadeUp 1s ease;
+
+}
+
+
+
+/* TEXT */
+
+.corporate-text{
+width:55%;
+}
+
+.corporate-text h2{
+color:#cc3366;
+font-size:30px;
+margin-bottom:10px;
+}
+
+.corporate-text p{
+font-size:16px;
+line-height:1.6;
+}
+
+.corporate-text ul{
+margin-top:10px;
+}
+
+
+
+/* IMAGE */
+
+.corporate-image{
+width:45%;
+}
+
+.corporate-image img{
+
+width:100%;
+border-radius:12px;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+
+transition:0.4s;
+
+}
+
+
+
+/* IMAGE HOVER EFFECT */
+
+.corporate-image img:hover{
+
+transform:scale(1.08);
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:5px;
+margin-top:40px;
+background:#cc3366;
+color:white;
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes fadeDown{
+
+from{
+opacity:0;
+transform:translateY(-40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* BIRTHDAY HEADER */
+
+.birthday-header{
+
+text-align:center;
+padding:30px;
+
+background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb);
+
+color:white;
+
+}
+
+.birthday-header h1{
+
+font-size:45px;
+letter-spacing:2px;
+
+animation:fadeDown 1s ease;
+
+}
+
+
+
+/* BIRTHDAY SECTION */
+
+.birthday-section{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+width:85%;
+margin:auto;
+margin-top:50px;
+
+background:rgb(254, 238, 238);
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+gap:40px;
+
+animation:fadeUp 1s ease;
+
+}
+
+
+
+/* TEXT */
+
+.birthday-text{
+
+width:55%;
+
+}
+
+.birthday-text h2{
+
+color:#ff4d88;
+font-size:30px;
+
+}
+
+.birthday-text p{
+
+font-size:16px;
+line-height:1.6;
+
+}
+
+
+
+/* IMAGE */
+
+.birthday-image{
+
+width:45%;
+
+}
+
+.birthday-image img{
+
+width:100%;
+height:300px;
+
+object-fit:cover;
+
+border-radius:12px;
+
+transition:0.4s;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+
+
+/* IMAGE HOVER */
+
+.birthday-image img:hover{
+
+transform:scale(1.08) rotate(1deg);
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+padding:20px;
+
+margin-top:40px;
+
+background:#ff4d88;
+
+color:white;
+
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+/* Concert Page */
+
+.concert-header{
+text-align:center;
+padding:60px;
+background:linear-gradient(135deg,#ffb6d9,#ffd6ea);
+}
+
+.title{
+font-family:'Dancing Script',cursive;
+font-size:50px;
+color:#e91e63;
+animation:fadeIn 2s;
+}
+
+.subtitle{
+font-family:'Poppins';
+font-size:18px;
+color:#444;
+}
+
+
+.concert-section{
+width:85%;
+margin:auto;
+padding:40px 0;
+}
+
+
+.concert-box{
+display:flex;
+align-items:center;
+margin-bottom:60px;
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+transition:0.4s;
+}
+
+.concert-box:hover{
+transform:scale(1.03);
+}
+
+
+.reverse{
+flex-direction:row-reverse;
+}
+
+
+.concert-img{
+width:50%;
+height:350px;
+object-fit:cover;
+transition:0.5s;
+}
+
+.concert-img:hover{
+transform:scale(1.1);
+}
+
+
+.concert-text{
+padding:40px;
+font-family:'Poppins';
+}
+
+.concert-text h2{
+color:#e91e63;
+font-size:28px;
+margin-bottom:10px;
+}
+
+.concert-text p{
+color:#f4d2d2;
+line-height:1.6;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+body{
+font-family:Poppins;
+margin:0;
+background:linear-gradient(135deg,#f9ccc5,#ffeaf3);
+}
+
+header{
+text-align:center;
+padding:40px;
+background:rgb(247, 178, 178);
+animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fc6f89,
+                     0 0 20px #fc6f89,
+                     0 0 30px #fc6f89;
+    }
+    to {
+        text-shadow: 0 0 20px #f4fdfe,
+                     0 0 30px #f4fdfe,
+                     0 0 40px #f4fdfe;
+    }
+}
+
+header h1{
+font-family:'Courier New', Courier, monospace;
+font-size:50px;
+color:#e91e63;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#e91e63;
+font-weight:500;
+}
+
+.booking-section{
+justify-content:center;
+padding:60px;
+}
+
+.booking-form{
+background:rgb(238, 225, 225);
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+width:400px;
+animation:fadeIn 1s;
+}
+
+.booking-form h2{
+text-align:center;
+color:#e91e63;
+margin-bottom:20px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+.booking-form textarea{
+height:80px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#ff4081;
+border:none;
+color:rgb(251, 231, 231);
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#e91e63;
+transform:scale(1.05);
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+#confetti{
+position:fixed;
+pointer-events:none;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+
+.about-title{
+font-family:'Dancing Script', cursive;
+font-size:40px;
+color:#e91e63;
+text-align:center;
+margin-bottom:20px;
+}
+
+.about-text{
+font-family:'Poppins', sans-serif;
+font-size:18px;
+line-height:1.8;
+text-align:center;
+max-width:800px;
+margin:auto;
+margin-bottom:20px;
+}
+
+.why-us{
+padding:60px;
+text-align:center;
+}
+
+.why-us h2{
+font-size:32px;
+color:#d81b60;
+margin-bottom:40px;
+}
+
+.why-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.why-card{
+background:rgb(254, 237, 237);
+padding:25px;
+width:250px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+.why-card:hover{
+transform:translateY(-10px);
+}
+
+.why-card h3{
+color:#e91e63;
+margin-bottom:10px;
+}
+
+.experience{
+padding:60px;
+text-align:center;
+font-family:'Poppins', sans-serif;
+}
+
+.experience h2{
+color:#d81b60;
+margin-bottom:20px;
+}
+
+.main-header{
+background:#f6a5a5;
+padding:40px;
+text-align:center;
+}
+
+.site-title{
+font-family:'Dancing Script';
+font-size:55px;
+color:#e91e63;
+margin-bottom:10px;
+}
+
+.nav a{
+margin:0 15px;
+text-decoration:none;
+font-size:18px;
+color:#e91e63;
+font-family:'Poppins', sans-serif;
+font-weight:500;
+}
+
+.nav a:hover{
+color:#c2185b;
+}
+
+.contact-section{
+padding:60px;
+text-align:center;
+background:hsl(0, 100%, 91%);
+}
+
+p{
+color: #783131;
+font-style:oblique;
+font-size: large;
+}
+
+.contact-section h2{
+font-size:40px;
+color: #cc0000;
+margin-bottom:20px;
+font-style:italic;
+animation-direction:initial;
+}
+
+.contact-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+color: #cc0000;
+}
+
+.contact-card{
+background:rgb(241, 155, 147);
+padding:25px;
+width:220px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+.contact-card:hover{
+transform:translateY(-10px);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Event Details</h1>
+</header>
+
+<section class="services">
+    <h2 id="eventTitle"></h2>
+    <p id="eventDescription"></p>
+</section>
+
+<script>
+    let eventName = localStorage.getItem("selectedEvent");
+
+    document.getElementById("eventTitle").innerText = eventName;
+
+    if(eventName === "Wedding"){
+        document.getElementById("eventDescription").innerText =
+        "Full wedding decoration, catering, photography and venue management.";
+    }
+    else if(eventName === "Corporate Event"){
+        document.getElementById("eventDescription").innerText =
+        "Professional setup for seminars, meetings and conferences.";
+    }
+    else if(eventName === "Birthday Party"){
+        document.getElementById("eventDescription").innerText =
+        "Theme decoration, cake, music and entertainment services.";
+    }
+    else if(eventName === "Concert"){
+        document.getElementById("eventDescription").innerText =
+        "Stage setup, lighting, sound system and crowd management.";
+    }
+</script>
+
+</body>
+</html>

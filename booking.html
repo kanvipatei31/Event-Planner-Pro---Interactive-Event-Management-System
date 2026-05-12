@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Your Event</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Book Your Event</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="booking.html">Book Event</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+
+<section class="booking-section">
+
+<form class="booking-form">
+
+<h2>Reserve Your Event</h2>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<select required>
+<option>Select Event Type</option>
+<option>Wedding</option>
+<option>Birthday</option>
+<option>Corporate Event</option>
+<option>Concert</option>
+<option>Festival</option>
+</select>
+
+<input type="date" required>
+
+<input type="number" placeholder="Number of Guests">
+
+<textarea placeholder="Special Requirements"></textarea>
+
+<button type="button" onclick="celebrate()">Submit Booking</button>
+
+</form>
+
+</section>
+
+<canvas id="confetti"></canvas>
+
+<script src="booking.js"></script>
+
+</body>
+</html>
